@@ -217,6 +217,80 @@ main { max-width: var(--maxw); margin: 0 auto; padding: 0 clamp(1rem, 4vw, 2rem)
   font-size: 0.85em;
 }
 
+/* Primary button (résumé download) */
+.intro__contact--primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.intro__contact--primary:hover {
+  background: var(--accent-dk);
+  border-color: var(--accent-dk);
+  color: #fff;
+}
+
+/* --- Certifications row ------------------------------------------------------ */
+.intro__certs {
+  margin-top: 1.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+.intro__certs:empty { display: none; }
+.certs__label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--text-soft);
+  margin-right: 0.15rem;
+}
+.cert {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+.cert__status {
+  font-size: 0.66rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  background: rgba(31, 111, 235, 0.10);
+  border-radius: 4px;
+  padding: 0.1rem 0.35rem;
+}
+
+/* --- Skills grid ------------------------------------------------------------ */
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.3rem 1.6rem;
+}
+.skills__group-title {
+  margin: 0 0 0.55rem;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-soft);
+}
+.skills__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.32rem;
+}
+.skills__item { font-size: 0.93rem; }
+
 /* --- Small screens ---------------------------------------------------------- */
 @media (max-width: 560px) {
   .nav__brand { font-size: 0.9rem; }

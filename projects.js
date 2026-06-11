@@ -3,10 +3,12 @@
 
    No build step. Edit, save, then commit + push (or just refresh locally).
 
-   Three things live here:
+   What lives here:
      1) SITE      — your name, headline, and contact links
-     2) SECTIONS  — the three section headings (rename the wording if you like)
-     3) PROJECTS  — your projects, grouped by section id
+     2) CERTS     — certifications shown as a row under your header
+     3) SKILLS    — the skills grid
+     4) SECTIONS  — the three section headings (rename the wording if you like)
+     5) PROJECTS  — your projects, grouped by section id
 
    --- To ADD a project --------------------------------------------------------
    Copy one { ... } block inside the right section list and edit the fields:
@@ -21,14 +23,33 @@
    ============================================================================= */
 
 const SITE = {
-  name:     "Zachary Ouldsfiya",            // <-- edit if this isn't right
+  name:     "Zachary Ouldsfiya",
   role:     "Junior Systems Administrator / Cloud IT",
-  blurb:    "I build, break, and document homelabs to learn cloud and Windows infrastructure hands-on. Currently looking for a junior sysadmin / cloud support role.",
-  location: "",                              // optional, e.g. "Remote · UK"
+  blurb:    "Recent BS in Information Technology (System Administration) from UMass Boston. I build production-style Windows and cloud infrastructure in the lab — Active Directory, PowerShell automation, GPO hardening, and Microsoft 365 / Intune. Looking for a junior sysadmin or cloud support role.",
+  location: "",                              // optional, e.g. "Boston, MA"
   email:    "ouldsfiyazachary@gmail.com",
   github:   "https://github.com/zachou66",
-  linkedin: ""                               // optional, e.g. "https://www.linkedin.com/in/you"
+  linkedin: "",                              // <-- ADD your LinkedIn URL, e.g. "https://www.linkedin.com/in/you"
+  resume:   ""                               // <-- set to "resume.pdf" after you add your PDF file to this folder
 };
+
+// Certifications — shown as a row under your header.
+//   status: ""  = earned    ·    "In progress" / "Planned" = small label next to it
+const CERTS = [
+  { name: "CompTIA Security+",                    status: "" },
+  { name: "Microsoft AZ-900: Azure Fundamentals", status: "In progress" }
+  // Add more, e.g.:
+  // ,{ name: "AWS Certified Cloud Practitioner", status: "Planned" }
+];
+
+// Skills snapshot — a scannable grid, grouped by area. Edit freely.
+const SKILLS = [
+  { group: "Windows / Server",        items: ["Windows Server 2022", "Active Directory", "Group Policy", "DNS / DHCP", "AGDLP model"] },
+  { group: "Cloud / Identity",        items: ["Microsoft 365", "Entra ID", "Entra Connect (hybrid)", "Azure fundamentals"] },
+  { group: "Endpoint",                items: ["Intune / MDM", "Windows 11", "Hybrid Azure AD Join", "Compliance policy"] },
+  { group: "Scripting & Automation",  items: ["PowerShell", "Git", "Idempotent scripting", "NTFS ACLs"] },
+  { group: "Practices",               items: ["dcdiag / gpresult verification", "Troubleshooting & triage", "Documentation"] }
+];
 
 // Section ids must match the keys used in PROJECTS below.
 const SECTIONS = [
@@ -54,18 +75,18 @@ const PROJECTS = {
   // ---- Azure / Windows Server ----------------------------------------------
   azure: [
     {
-      title:       "Active Directory Homelab",
-      description: "Stood up a Windows Server domain controller with users, OUs, and Group Policy in a virtualized lab.",
-      tags:        ["Windows Server", "Active Directory", "Group Policy", "DNS", "PowerShell"],
+      title:       "Enterprise Windows Server Infrastructure Lab",
+      description: "End-to-end Windows Server 2022 build: Active Directory (AGDLP), PowerShell user provisioning, CIS-aligned GPO hardening, and Microsoft 365 hybrid identity with Intune.",
+      tags:        ["Windows Server", "Active Directory", "PowerShell", "Group Policy", "Entra ID", "Intune"],
       repo:        "https://github.com/zachou66/active-directory-homelab"
-    },
-    {
-      // EXAMPLE — replace with your own, or delete this block.
-      title:       "Entra ID / Azure AD Lab",
-      description: "Configured cloud identities, groups, and conditional access in a Microsoft Entra tenant.",
-      tags:        ["Azure", "Entra ID", "Conditional Access", "MFA"],
-      repo:        ""
     }
+    // To add another project, copy this template, uncomment it, and fill it in:
+    // ,{
+    //   title:       "Project name",
+    //   description: "One line on what it does / what you did.",
+    //   tags:        ["Azure", "PowerShell"],
+    //   repo:        "https://github.com/zachou66/your-repo"
+    // }
   ],
 
   // ---- AWS ------------------------------------------------------------------
