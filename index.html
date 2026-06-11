@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zachary Ouldsfiya — Sysadmin / Cloud IT</title>
+  <meta name="description" content="Portfolio of Zachary Ouldsfiya — junior systems administrator and cloud IT. Projects across Azure / Windows Server, AWS, and Windows endpoint management." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Sticky navigation (links generated from SECTIONS in projects.js) -->
+  <header class="nav" id="nav">
+    <a class="nav__brand" href="#top" id="navBrand">Portfolio</a>
+    <nav class="nav__links" id="navLinks" aria-label="Sections"></nav>
+  </header>
+
+  <main id="top">
+
+    <!-- Intro header (filled from SITE in projects.js) -->
+    <section class="intro" id="intro">
+      <h1 class="intro__name" id="introName"></h1>
+      <p class="intro__role" id="introRole"></p>
+      <p class="intro__blurb" id="introBlurb"></p>
+      <div class="intro__contacts" id="introContacts"></div>
+    </section>
+
+    <!-- Project sections (generated from SECTIONS + PROJECTS in projects.js) -->
+    <div id="sections"></div>
+
+  </main>
+
+  <footer class="footer">
+    <p id="footerText"></p>
+    <p class="footer__edit">Add projects by editing <code>projects.js</code>.</p>
+  </footer>
+
+  <noscript>
+    <p style="padding:2rem;text-align:center;">
+      This portfolio renders project data with a small JavaScript file.
+      Please enable JavaScript to view it.
+    </p>
+  </noscript>
+
+  <script src="projects.js"></script>
+  <script src="render.js"></script>
+</body>
+</html>
