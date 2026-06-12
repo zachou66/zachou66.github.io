@@ -97,20 +97,13 @@ const PROJECTS = {
 
   // ---- AWS ------------------------------------------------------------------
   aws: [
-    {
-      // EXAMPLE — replace with your own, or delete this block.
-      title:       "Static Site on S3 + CloudFront",
-      description: "Hosted a static website on S3 behind a CloudFront CDN with HTTPS.",
-      tags:        ["AWS", "S3", "CloudFront", "IAM"],
-      repo:        ""
-    },
-    {
-      // EXAMPLE — replace with your own, or delete this block.
-      title:       "EC2 Web Server",
-      description: "Launched and hardened a Linux EC2 instance behind a security group serving a web app.",
-      tags:        ["AWS", "EC2", "VPC", "Linux"],
-      repo:        ""
-    }
+    // Your real AWS project will go here once it's built and documented, e.g.:
+    // {
+    //   title:       "AWS IAM & Account Security Baseline",
+    //   description: "One line on what it does / what you did.",
+    //   tags:        ["AWS", "IAM", "MFA", "CloudTrail"],
+    //   repo:        "https://github.com/zachou66/your-repo"
+    // }
   ],
 
   // ---- Windows / Endpoint ---------------------------------------------------
