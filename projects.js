@@ -108,20 +108,15 @@ const PROJECTS = {
 
   // ---- Windows / Endpoint ---------------------------------------------------
   endpoint: [
-    {
-      // EXAMPLE — replace with your own, or delete this block.
-      title:       "Intune Device Enrollment Lab",
-      description: "Enrolled and managed Windows 11 devices with compliance and configuration policies in Intune.",
-      tags:        ["Intune", "MDM", "Windows 11", "Compliance"],
-      repo:        ""
-    },
-    {
-      // EXAMPLE — replace with your own, or delete this block.
-      title:       "PowerShell Endpoint Inventory",
-      description: "Script that collects hardware, OS, and installed-software inventory across machines into a CSV.",
-      tags:        ["PowerShell", "Automation", "Reporting"],
-      repo:        ""
-    }
+    // Planned (add the card here when the lab is actually done):
+    // {
+    //   title:       "Modern Endpoint Management Lab (Intune + Autopilot)",
+    //   description: "One line on what it does / what you did.",
+    //   tags:        ["Intune", "Autopilot", "Windows 11", "Compliance"],
+    //   repo:        "https://github.com/zachou66/intune-autopilot-lab"
+    // }
+    // Also planned, likely its own section later: Monitoring & Alerting
+    // (Prometheus + Grafana) -> https://github.com/zachou66/prometheus-grafana-lab
   ]
 
 };
