@@ -79,6 +79,12 @@ const PROJECTS = {
       description: "End-to-end Windows Server 2022 build: Active Directory (AGDLP), PowerShell user provisioning, CIS-aligned GPO hardening, and Microsoft 365 hybrid identity with Intune.",
       tags:        ["Windows Server", "Active Directory", "PowerShell", "Group Policy", "Entra ID", "Intune"],
       repo:        "https://github.com/zachou66/active-directory-homelab"
+    },
+    {
+      title:       "Cloud Identity & Access Lab (Entra ID)",
+      description: "Cloud-only Microsoft Entra ID lab: idempotent Graph PowerShell user provisioning, MFA and Conditional Access (report-only first), self-service password reset, and SAML SSO to a SaaS app.",
+      tags:        ["Entra ID", "Conditional Access", "MFA", "Graph PowerShell", "SAML SSO"],
+      repo:        "https://github.com/zachou66/cloud-identity-lab"
     }
     // To add another project, copy this template, uncomment it, and fill it in:
     // ,{
