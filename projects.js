@@ -99,10 +99,10 @@ const PROJECTS = {
   aws: [
     // Your real AWS project will go here once it's built and documented, e.g.:
     // {
-    //   title:       "AWS IAM & Account Security Baseline",
+    //   title:       "Cross-Region Encrypted Network Backbone",
     //   description: "One line on what it does / what you did.",
-    //   tags:        ["AWS", "IAM", "MFA", "CloudTrail"],
-    //   repo:        "https://github.com/zachou66/your-repo"
+    //   tags:        ["AWS", "VPC", "WireGuard", "Routing", "iptables NAT"],
+    //   repo:        "https://github.com/zachou66/cross-region-network-backbone"
     // }
   ],
 
